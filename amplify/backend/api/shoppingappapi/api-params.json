@@ -1,0 +1,33 @@
+{
+  "paths": [
+    {
+      "name": "/products-dev",
+      "lambdaFunction": "shoppingappe48c8484",
+      "privacy": {
+        "protected": true,
+        "auth": ["/POST", "/GET", "/PUT", "/PATCH", "/DELETE"],
+        "unauth": ["/GET"]
+      }
+    }
+  ],
+  "resourceName": "shoppingappapi",
+  "apiName": "shoppingappapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "shoppingappe48c8484"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-shoppingapp-dev-113619-authRole",
+    "unAuthRoleName": "amplify-shoppingapp-dev-113619-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "shoppingappe48c8484",
+      "attributes": ["Name", "Arn"]
+    }
+  ]
+}

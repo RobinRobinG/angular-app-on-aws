@@ -3,16 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
+import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
+  declarations: [AppComponent, NavComponent, HomeComponent],
+  imports: [BrowserModule, AppRoutingModule, AmplifyAngularModule],
+  providers: [AmplifyService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

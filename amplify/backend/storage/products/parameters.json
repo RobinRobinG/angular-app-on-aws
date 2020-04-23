@@ -1,0 +1,5 @@
+{
+  "tableName": "products-dev",
+  "partitionKeyName": "id",
+  "partitionKeyType": "S"
+}
